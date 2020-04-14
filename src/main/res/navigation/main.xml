@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    app:startDestination="@+id/homeScreen">
+
+    <fragment
+        android:id="@+id/homeScreen"
+        android:name="com.example.companionapp.Fragments.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+    </fragment>
+    <fragment
+        android:id="@+id/scheduleScreen"
+        android:name="com.example.companionapp.Fragments.ScheduleFragment"
+        android:label="Schedule"
+        tools:layout="@layout/fragment_schedule">
+    </fragment>
+
+    <fragment
+        android:id="@+id/peopleScreen"
+        android:name="com.example.companionapp.Fragments.PeopleFragment"
+        android:label="People"
+        tools:layout="@layout/fragment_people">
+    </fragment>
+    <fragment
+        android:id="@+id/buildingsScreen"
+        android:name="com.example.companionapp.Fragments.BuildingsFragment"
+        android:label="Buildings"
+        tools:layout="@layout/fragment_buildings">
+    </fragment>
+    <fragment
+        android:id="@+id/loginScreen"
+        android:name="com.example.companionapp.Fragments.TokenFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_token">
+    </fragment>
+</navigation>
